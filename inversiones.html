@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NerdStudios LLC</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="logo.png" alt="Logo de NerdStudios">
+            <h1>NerdStudios</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inversiones.html">Inversiones</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro-inversion">
+            <h2>Opciones de Inversión</h2>
+            <p>Aqui veras los diferentes tipos de inversiones que proporcionamos a los interesados y / o colaboradores de NerdStudios para que su proyecto llegue al exito.</p>
+        </section>
+
+        <section id="proceso-inversion">
+            <h2>Proceso de Inversión</h2>
+            <p>El proceso es simple, mandas una solicitud de inversion al discord o mail de nuestro manager y el te respondera solicitando unos datos, nuestro equipo valorara los datos y que tipo de inversion esla mejor, una vez decidio si se aprueva o rechaza se le comentara el resultado.</p>
+        </section>
+
+        <section id="beneficios-inversion">
+            <h2>Beneficios para Inversores</h2>
+            <p>Que NerdStudios invierta en tu proyecto trae varios veneficios, como soporte o ayud aen la construccion de tu proyecto o depende de la inversion proporcionamos infraestructura propia para alojarlo, soporte para tus clientes y mas beneficios personalizados dependiendo del proyecto.</p>
+        </section>
+
+        <section id="proyectos-destacados">
+            <h2>Tipos de inversion</h2>
+            <p>Ofrecemos inversion monetaria y de infraestructura. La inversion monetaria consiste en ir dando un monto definido cada cierto tiempo al proyecto para que se pueden desarrollar perfectamente | La inversion de infraestructura consiste en prestar o alquilar servidores dedicados o vps a NerdStudios para alojar su proyecto o hosting</p>
+        </section>
+
+        <section id="contacto-inversion">
+            <h2>Contáctanos</h2>
+            <div class="botones-contacto">
+                <button id="boton-discord" onclick="abrirPopup('popup-discord')">Discord</button>
+                <button id="boton-email" onclick="abrirPopup('popup-email')">Email</button>
+            </div>
+
+            <div id="popup-discord" class="popup">
+                <span class="cerrar-popup" onclick="cerrarPopup('popup-discord')">&times;</span>
+                <h3>Discord</h3>
+                <p>Discord: mauu__18</p>
+            </div>
+
+            <div id="popup-email" class="popup">
+                <span class="cerrar-popup" onclick="cerrarPopup('popup-email')">&times;</span>
+                <h3>Email</h3>
+                <p>Email: manu@nerdstudios.es</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NerdStudios. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function abrirPopup(idPopup) {
+            document.getElementById(idPopup).style.display = "block";
+        }
+
+        function cerrarPopup(idPopup) {
+            document.getElementById(idPopup).style.display = "none";
+        }
+        // Función para detectar si el usuario está en un dispositivo móvil
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Redirigir si el usuario está en un móvil
+    if (isMobile()) {
+        window.location.href = "inversiones-mv.html"; // Reemplaza con la URL de tu página móvil
+    }
+    </script>
+</body>
+</html>

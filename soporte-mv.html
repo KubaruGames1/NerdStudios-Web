@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NerdStudios LLC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-mv.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="logo.png" alt="Logo de NerdStudios">
+            <h1>NerdStudios</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index-mv.html">Inicio</a></li>
+                <li><a href="inversiones-mv.html">Inversiones</a></li>
+                <li><a href="soporte-mv.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro-soporte">
+            <h2>Opciones de Soporte</h2>
+            <p>En NerdStudios, entendemos que el éxito de tu proyecto depende de un soporte técnico confiable y eficiente. Por eso, ofrecemos una amplia gama de servicios de hosting y soporte técnico para garantizar que tu sitio web o aplicación funcione sin problemas las 24 horas del día, los 7 días de la semana.</p>
+        </section>
+
+        <section id="planes-hosting">
+            <h2>Soporte Hosting</h2>
+            <p>Ofrecemos la opcion de contactar a uno de nuestro personal de soporte para atencion al cliente a los usuarios de tu hosting, asi proporcionando soporte de calidad</p>
+        </section>
+
+        <section id="soporte-tecnico">
+            <h2>Soporte Técnico</h2>
+            <p>Ofrecemos tambien la posibilidad de contratar a uno de nuestros Administradores de Sistemas para colaborar en tu hosting o proyecto en la seccion de servidores dedicados o vps.</p>
+        </section>
+
+        <section id="beneficios-hosting">
+            <h2>Beneficios de nuestro Soporte</h2>
+            <p>Al elegir NerdStudios como tu proveedor de hosting, te beneficiarás de:</p>
+            <ul>
+                <li>Todo funciona con contrato por las 2 partes.</li>
+                <li>Seguridad robusta para proteger tus datos.</li>
+                <li>Soporte técnico 24/7 vía chat y correo electrónico.</li>
+                <li>Profesionales en este ambito con mas de 6 meses de experiencia.</li>
+            </ul>
+        </section>
+
+        <section id="contacto-soporte">
+            <h2>Contáctanos</h2>
+            <div class="botones-contacto">
+                <button id="boton-discord" onclick="abrirPopup('popup-discord')">Discord</button>
+                <button id="boton-email" onclick="abrirPopup('popup-email')">Email</button>
+            </div>
+
+            <div id="popup-discord" class="popup">
+                <span class="cerrar-popup" onclick="cerrarPopup('popup-discord')">&times;</span>
+                <h3>Discord</h3>
+                <p>Discord: mauu__18</p>
+            </div>
+
+            <div id="popup-email" class="popup">
+                <span class="cerrar-popup" onclick="cerrarPopup('popup-email')">&times;</span>
+                <h3>Email</h3>
+                <p>Email: manu@nerdstudios.es</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NerdStudios. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function abrirPopup(idPopup) {
+            document.getElementById(idPopup).style.display = "block";
+        }
+
+        function cerrarPopup(idPopup) {
+            document.getElementById(idPopup).style.display = "none";
+        }
+    </script>
+</body>
+</html>

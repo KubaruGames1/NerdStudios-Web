@@ -1,0 +1,192 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #f2f2f2; /* Texto blanco */
+    background-color: #212529; /* Fondo gris oscuro */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #343a40; /* Gris más oscuro para el encabezado */
+    padding: 1rem; /* Reducir el padding para móviles */
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem; /* Reducir el margen para móviles */
+}
+
+#logo-container img {
+    max-width: 80px; /* Reducir el tamaño del logo para móviles */
+    margin-right: 0.5rem;
+}
+
+#logo-container h1 {
+    color: #f2f2f2; /* Texto blanco para el nombre */
+    font-size: 1.5rem; /* Ajustar tamaño de fuente para móviles */
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: block; /* Apilar los elementos del menú en móviles */
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f2f2f2; /* Enlaces blancos */
+    font-weight: bold;
+    display: block; /* Ocupar todo el ancho del contenedor en móviles */
+    padding: 0.5rem; /* Agregar padding para mejorar la interacción táctil */
+}
+
+nav a:hover {
+    color: #ffc107; /* Color de enlace al pasar el mouse (amarillo) */
+}
+
+/* Estilos para títulos */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1rem; /* Reducir el margen para móviles */
+    color: #ffc107; /* Títulos en amarillo */
+}
+
+h2 {
+    font-size: 1.2rem; /* Ajustar tamaño de fuente para móviles */
+}
+
+/* Estilos para párrafos */
+p {
+    text-align: justify;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 1.5rem; /* Reducir el padding para móviles */
+    margin-bottom: 1.5rem; /* Reducir el margen para móviles */
+    background-color: #282c34; /* Gris ligeramente más claro para las secciones */
+    border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+}
+
+/* Estilos para la sección de colaboradores */
+#colaboradores {
+    text-align: center; /* Centrar el título */
+}
+
+.colaboradores-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permitir que los recuadros se ajusten en varias filas si es necesario */
+    gap: 1rem; /* Reducir el espacio entre recuadros para móviles */
+}
+
+.colaborador {
+    background-color: #121212; /* Negro media noche */
+    padding: 1rem; /* Reducir el padding para móviles */
+    border-radius: 8px;
+    width: calc(50% - 1rem); /* Dos recuadros por fila en móviles */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar los recuadros */
+}
+
+.colaborador img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem; /* Reducir el margen para móviles */
+}
+
+.colaborador h3 {
+    color: #ffc107; /* Títulos en amarillo */
+    margin-bottom: 0.25rem; /* Reducir el margen para móviles */
+    font-size: 1rem; /* Ajustar tamaño de fuente para móviles */
+}
+
+.colaborador p {
+    color: #f2f2f2; /* Texto blanco */
+    font-size: 0.9rem; /* Ajustar tamaño de fuente para móviles */
+}
+
+/* Estilo para el botón de Discord */
+.discord-button {
+    display: block;
+    width: 100%; /* Ocupar todo el ancho en móviles */
+    background-color: #7289da; /* Color morado de Discord */
+    color: white;
+    padding: 0.5rem; /* Reducir el padding para móviles */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse */
+    margin-top: 0.5rem; /* Agregar margen superior para móviles */
+}
+
+.discord-button:hover {
+    background-color: #5865f2; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos para los botones de contacto */
+.botones-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column; /* Apilar botones en vertical para móviles */
+}
+
+.botones-contacto button {
+    background-color: #7289da; /* Color morado de Discord */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ocupar todo el ancho en móviles */
+}
+
+.botones-contacto button:hover {
+    background-color: #5865f2; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos para los pop-ups */
+.popup {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #282c34;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Asegurar que el pop-up esté por encima de otros elementos */
+    max-width: 90%; /* Limitar el ancho máximo en móviles */
+}
+
+.cerrar-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #343a40; /* Gris más oscuro para el pie de página */
+    text-align: center;
+    padding: 0.5rem 0; /* Reducir el padding para móviles */
+}
+
+footer p {
+    color: #f2f2f2; /* Texto blanco en el pie de página */
+    font-size: 0.8rem; /* Ajustar tamaño de fuente para móviles */
+}
